@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9331e9a5-6f59-4dca-b55f-8407e173bbbe" name="Changes" comment="Fix VCS config" />
+    <list default="true" id="9331e9a5-6f59-4dca-b55f-8407e173bbbe" name="Changes" comment="Fix files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +60,6 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/Users/aitanalidzhievaicloud.com/IdeaProjects/hosting/src/main/kotlin/Main.kt",
@@ -130,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744386224847</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix files">
+      <option name="closed" value="true" />
+      <created>1744387353575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744387353575</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +171,7 @@
     </ignored-roots>
     <MESSAGE value="изменения в структуре проекта" />
     <MESSAGE value="Fix VCS config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix VCS config" />
+    <MESSAGE value="Fix files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix files" />
   </component>
 </project>
