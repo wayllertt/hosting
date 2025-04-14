@@ -1,4 +1,4 @@
-package com.wayllertt.demo
+package com.wayllertt
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

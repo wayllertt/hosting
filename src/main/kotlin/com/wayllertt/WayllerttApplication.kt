@@ -1,5 +1,6 @@
-package com.wayllertt.demo
+package com.wayllertt
 
+import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,5 @@ import org.springframework.boot.runApplication
 class WayllerttApplication
 
 fun main(args: Array<String>) {
-	runApplication<WayllerttApplication>(*args)
+	SpringApplication.run(WayllerttApplication::class.java)
 }
