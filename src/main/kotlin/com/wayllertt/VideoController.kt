@@ -1,14 +1,22 @@
+//сервис для запросов
+
 package com.wayllertt
 
-import org.springframework.web.bind.annotation.GetMapping //получить
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController //для работы с рест апи
+import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/api")
-class VideoController {
-    @GetMapping("/video") //обрабатывает гет запросы
-    fun video():String {
-        return "Эта залупа работает!"
+@RequestMapping("/api/videos")
+class VideoController(private val videoRepository: VideoRepository) {
+
+    @GetMapping //обрабатывает гет запросы
+    fun getVideos(): List<Video> {
+        return videoRepository.findAll() //findAll() - функция возвращает все видео из БД
     }
+
+    @PostMapping
+    fun addVideo(@RequestBody video: Video): Video {
+        return videoRepository.save(video) //save(video) - функция добавляет новое видео
+    }
+
+
 }
