@@ -1,5 +1,5 @@
 package com.wayllertt
 
-import org.springframework.data.jpa.repository.JpaRepository
+//import org.springframework.data.jpa.repository.JpaRepository
 
-interface VideoRepository : JpaRepository<Video, Long>
+//interface VideoRepository : JpaRepository<Video, Long>
