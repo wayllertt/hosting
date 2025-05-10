@@ -1,0 +1,26 @@
+volumes:
+  pg_server:
+
+services:
+  server_db:
+    image: postgres
+    restart: always
+    ports:
+      - "127.0.0.1:5433:5432" # 5432 - порт докера по умолчанию
+    environment:
+      - POSTGRES_USER=wayllertt
+      - POSTGRES_PASSWORD=lalala
+      - POSTGRES_DB=server_db
+    volumes:
+      - pg_server:/var/lib/postgresql/data
+
+
+
+#  postgres:
+#    image: postgres:17.0
+#    ports:
+#      - "5432:5432"
+#    environment:
+#      - POSTGRES_PASSWORD=petclinic
+#      - POSTGRES_USER=petclinic
+#      - POSTGRES_DB=petclinic
