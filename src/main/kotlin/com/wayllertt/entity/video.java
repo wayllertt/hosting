@@ -12,7 +12,7 @@ import org.springframework.samples.petclinic.model.Column;
 
 @Entity
 @Table(name = "videos")
-data class Video(
+data class video(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
