@@ -1,12 +1,14 @@
 package com.wayllertt
 
 import org.springframework.boot.SpringApplication
-import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-class WayllerttApplication
+class WayllerttApplication {
 
-fun main(args: Array<String>) {
-	SpringApplication.run(WayllerttApplication::class.java)
+	public fun main(args: Array<String>) {
+		 SpringApplication.run(WayllerttApplication::class.java, *args)
+	}
+
+
 }

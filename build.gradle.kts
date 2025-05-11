@@ -41,6 +41,9 @@ dependencies {
 	testImplementation("org.springframework.graphql:spring-graphql-test")
 	testImplementation("org.springframework.kafka:spring-kafka-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.postgresql:postgresql")                 // драйвер Postgres
+	implementation("org.springframework.boot:spring-boot-starter-web")
 }
 
 dependencyManagement {
@@ -65,3 +68,9 @@ tasks.generateJava {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+//
+//java {
+//	toolchain {
+//		languageVersion.set(JavaLanguageVersion.of(17))
+//	}
+//}
