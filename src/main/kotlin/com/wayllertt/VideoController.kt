@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*
 class VideoController(private val repo: videoRepository) {
 
     @GetMapping
-    fun getAll(): List<videos> = repo.findAll()
+    fun getAll(): List<video> = repo.findAll()
 
     @PostMapping
     fun add(@RequestBody video: video): video = repo.save(video)

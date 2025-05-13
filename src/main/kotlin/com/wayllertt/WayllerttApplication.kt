@@ -5,10 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 class WayllerttApplication {
+	companion object {
 
-	public fun main(args: Array<String>) {
-		 SpringApplication.run(WayllerttApplication::class.java, *args)
+		@JvmStatic
+		public fun main(args: Array<String>) {
+			SpringApplication.run(WayllerttApplication::class.java, *args)
+		}
+
 	}
-
 
 }

@@ -1,6 +1,11 @@
 package com.wayllertt.entity;
 
-import javax.persistence.*
+import jakarta.persistence.Entity
+import jakarta.persistence.Table
+import jakarta.persistence.Id
+import jakarta.persistence.Column
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.GenerationType
 import java.time.LocalDateTime ; // Для работы с датой/временем
 
 @Entity
@@ -19,8 +24,8 @@ data class video(
     @Column(nullable = false, length = 500)
     val description: String,
 
-    @Column(nullable = true, length = 500)
-    val cast: String,
+    @Column(name = "cast_members", nullable = true, length = 500)
+    val castMembers: String,
 
     @Column()
     val director: String,

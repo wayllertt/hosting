@@ -6,4 +6,4 @@ spring:
       password: lalala
   sql:
     init:
-      mode: always
+      mode: never
