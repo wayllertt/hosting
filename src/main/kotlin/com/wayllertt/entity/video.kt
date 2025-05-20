@@ -18,10 +18,12 @@ data class video(
     @Column(nullable = false, length = 100)
     val title: String,
 
+    val filename: String,
+
     @Column(nullable = false, unique = true)
     val url: String,
 
-    @Column(nullable = false, length = 500)
+    @Column(nullable = false, length = 1000)
     val description: String,
 
     @Column(name = "cast_members", nullable = true, length = 500)
@@ -29,9 +31,12 @@ data class video(
 
     @Column()
     val director: String,
-//
-//    @Column()
-//    val rating: ,
+
+    @Column(nullable = false)
+    var views: Long = 0,
+
+    @Column(nullable = false)
+    var likes: Long = 0,
 
     @Column(name = "created_at", nullable = false)
     val createdAt: LocalDateTime = LocalDateTime.now()
