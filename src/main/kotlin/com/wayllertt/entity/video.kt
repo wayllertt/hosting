@@ -32,10 +32,10 @@ data class video(
     @Column()
     val director: String,
 
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "bigint default 0")
     var views: Long = 0,
 
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "bigint default 0")
     var likes: Long = 0,
 
     @Column(name = "created_at", nullable = false)

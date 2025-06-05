@@ -7,7 +7,7 @@ data class VideoDto (
     val id: Long,
     val title: String,
     val url: String,
-    val thumbnaiUrl: String,
+    val thumbnailUrl: String,
     val castMembers: String,
     val director: String,
     val description: String,
